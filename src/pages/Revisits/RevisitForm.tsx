@@ -16,4 +16,5 @@ const RevisitForm = ({ onAddRevisit }: Props) => (
     </form>
   </>
 );
+
 export default RevisitForm;
