@@ -1,0 +1,17 @@
+name: Continuos Integration - Continuos Deployment
+
+on: push
+
+jobs:
+  name: Build App
+  run: yarn build --prod
+  name: Config AWS Account
+  uses: aws-actions/configure-aws-credentials@v1
+  with:
+    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    aws-region: ${{ secrets.AWS_REGION }}
+  name: AWS Version
+  run: aws --version
+  name: Deploy App
+  run: aws s3 sync ./build ${{ secrets.AWS_BUCKET }}
