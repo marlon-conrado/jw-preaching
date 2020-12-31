@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   }
 
   width: 100%;
-  height: 60px;
+  height: 100%;
   background-color: lightgray;
   display: flex;
   box-shadow: 1px 1px 7px gray;

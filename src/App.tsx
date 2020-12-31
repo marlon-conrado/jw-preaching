@@ -8,7 +8,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <div
+          style={{
+            position: "fixed",
+            width: "100%",
+            left: "0",
+            height: "60px",
+            zIndex: 100
+          }}
+        >
+          <Navbar />
+        </div>
         <Body />
       </BrowserRouter>
     </>
