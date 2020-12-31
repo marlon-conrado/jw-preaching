@@ -57,4 +57,4 @@ jobs:
       - name: AWS Version
         run: aws --version
       - name: Deploy App
-        run: aws s3 sync ./build ${{ secrets.AWS_BUCKET }}
+        run: aws s3 sync ./build ${{ secrets.AWS_BUCKE }}
