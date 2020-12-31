@@ -21,7 +21,8 @@ module.exports = {
     ],
     indent: ["error", 2, { ignoredNodes: ["JSXElement"] }],
     "import/extensions": "off",
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   },
   settings: {
     react: {

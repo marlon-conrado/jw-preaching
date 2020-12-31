@@ -1,6 +1,9 @@
 name: Continuos Integration - Continuos Deployment
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   integration:
