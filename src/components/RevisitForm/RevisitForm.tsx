@@ -1,12 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Button from "components/Button/Button";
+
 import {
   RevisitFormContainer,
   RevisitFormInputContainer,
   RevisitFormRow,
   RevisitFormTextAreaContainer
-} from "../../components/RevisitForm/Styles";
-import Button from "../Button/Button";
+} from "./Styles";
 
 export interface RevisitFormProps {
   onAddRevisit: any;
